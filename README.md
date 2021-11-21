@@ -75,6 +75,11 @@ DB_PASSWORD=laravel
 ```
 docker-compose exec php php /var/www/html/artisan  key:generate
 ```
+
+- Execute o comando:
+```
+docker-compose exec php composer install
+```
 - Execute o comando:
 ```
 docker-compose exec php php /var/www/html/artisan  migrate:fresh --seed
