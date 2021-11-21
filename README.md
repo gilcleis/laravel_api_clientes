@@ -52,9 +52,11 @@ Apaga o registro de um cliente
 ```
 
 ### Instalação Docker
+- Execute o comando:
 ```
 docker-compose up -d
 ```
+- Execute o comando:
 ```
 docker-compose exec php cp /var/www/html/.env.example /var/www/html/.env 
 ```
@@ -67,10 +69,13 @@ DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=laravel
+
 ```
+- Execute o comando:
 ```
 docker-compose exec php php /var/www/html/artisan  key:generate
 ```
+- Execute o comando:
 ```
 docker-compose exec php php /var/www/html/artisan  migrate:fresh --seed
 ```
