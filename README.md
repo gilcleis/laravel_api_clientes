@@ -52,6 +52,15 @@ Apaga o registro de um cliente
 ```
 
 ### Instalação Docker
+- Clone o repositório com __git clone__ executando o comando:
+```
+git clone https://github.com/gilcleis/laravel_api_clientes.git
+
+```
+- ecesse o direrorio /laravel_api_clientes:
+```
+cd laravel_api_clientes
+```
 - Execute o comando:
 ```
 docker-compose up -d
@@ -71,14 +80,15 @@ DB_USERNAME=root
 DB_PASSWORD=laravel
 
 ```
-- Execute o comando:
-```
-docker-compose exec php php /var/www/html/artisan  key:generate
-```
+
 
 - Execute o comando:
 ```
 docker-compose exec php composer install
+```
+- Execute o comando:
+```
+docker-compose exec php php /var/www/html/artisan  key:generate
 ```
 - Execute o comando:
 ```
@@ -87,13 +97,13 @@ docker-compose exec php php /var/www/html/artisan  migrate:fresh --seed
 
 - Acessar o endereço
 ```
-http://127.0.0.1:8080/
+http://127.0.0.1:8080/api/clientes
 ```
 ### Instalação Manual
 
 - Clone o repositório com __git clone__ executando o comando:
 ```
-git clone https://github.com/gilcleis/api_developer.git
+git clone https://github.com/gilcleis/laravel_api_clientes.git
 ```
 - Acesse o diretorio criado
 - Crie uma copia do arqruivo __.env.example__ nomeando para __.env__ 
